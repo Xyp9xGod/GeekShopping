@@ -11,6 +11,6 @@
 
         public string CategoryName { get; set; }
 
-        public string ImagrURL { get; set; }
+        public string ImageURL { get; set; }
     }
 }
