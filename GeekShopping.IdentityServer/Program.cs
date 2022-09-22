@@ -1,7 +1,9 @@
+using Duende.IdentityServer.Services;
 using GeekShopping.IdentityServer.Configuration;
 using GeekShopping.IdentityServer.Initializer;
 using GeekShopping.IdentityServer.Model;
 using GeekShopping.IdentityServer.Model.Context;
+using GeekShopping.IdentityServer.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -34,6 +36,7 @@ builder.Services.AddIdentityServer(options =>
 
 // Dependence Inject to Initialzer Step 1
 builder.Services.AddScoped<IDBInitializer, DBInitializer>();
+builder.Services.AddScoped<IProfileService, ProfileService>();
 
 
 // Add services to the container.
