@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using GeekShopping.CartAPI.Data.ValueObjetcts;
+using GeekShopping.CartAPI.Data.ValueObjects;
 using GeekShopping.CartAPI.Model;
 
 namespace GeekShopping.CartAPI.Config

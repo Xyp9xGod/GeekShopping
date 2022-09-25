@@ -1,4 +1,4 @@
-﻿namespace GeekShopping.CartAPI.Data.ValueObjetcts
+﻿namespace GeekShopping.CartAPI.Data.ValueObjects
 {
     public class CartHeaderVO
     {
