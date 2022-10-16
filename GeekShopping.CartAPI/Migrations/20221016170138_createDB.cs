@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GeekShopping.CartAPI.Migrations
 {
-    public partial class AddCartDataTablesOnDB : Migration
+    public partial class createDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -20,7 +20,7 @@ namespace GeekShopping.CartAPI.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     user_id = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    cupon_code = table.Column<string>(type: "longtext", nullable: false)
+                    coupon_code = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
